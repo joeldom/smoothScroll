@@ -11,7 +11,7 @@
 		var scrollElem = scrollableElement('html', 'body');
 	
 		// Any links with hash tags in them (can't do ^= because of fully qualified URL potential)
-		$('a[href*=#]').each(function() {
+		$('#nav a[href*=#]').each(function() {
 	
 			// Ensure it's a same-page link
 			var thisPath = filterPath(this.pathname) || locationPath;
